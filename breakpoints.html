@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper {
+
+width: 800px;
+
+height: 800px;
+
+background-color: blue;
+
+}
+
+article {
+
+height: 400px;
+
+width: 400px;
+
+background-color: red;
+
+z-index: 10;
+
+}
+
+aside {
+
+position: absolute;
+
+width: 200px;
+
+height: 200px;
+
+top: 50px;
+
+left: 500px;
+
+background-color: green;
+
+z-index: 11;
+
+font-size: x-large;
+
+}
+
+@media screen and (max-width: 600px) {
+
+aside {
+  z-index: 13;
+
+  left: 10px;
+
+}
+
+}
+</style>
+<body>
+    <div class="wrapper">
+
+        <article></article>
+
+        <aside><p>IMPORTANT STUFF!!!</p></aside>      
+
+    </div>
+</body>
+</html>
